@@ -1,0 +1,13 @@
+class pr2{
+static	int mobile_cost= 100000;
+static	long mobile_num=8168241316l;
+static	String mobile_color="red";
+	
+	public static void main (String[] args){
+
+	System.out.println("the mobile cost is: "+mobile_cost);
+	System.out.println("the mobile number is: "+mobile_num);
+	System.out.println("the mobile color is: "+mobile_color);
+	
+	}
+}

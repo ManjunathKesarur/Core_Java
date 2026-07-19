@@ -1,0 +1,12 @@
+class pr3{	
+	public static void main (String[] args){
+		int car_cost= 100000;
+		String car_model="Thar";
+		String car_type="XUV";
+
+	System.out.println("the Car cost is: "+car_cost);
+	System.out.println("the Car model is: "+car_model);
+	System.out.println("the Car type is: "+car_type);
+	
+	}
+}
