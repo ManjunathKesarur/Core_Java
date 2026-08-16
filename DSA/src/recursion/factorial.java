@@ -8,8 +8,7 @@ static int num(int a) {
 		return a * num(a-1);
 }
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-System.out.println(num(9));
+System.out.println(num(2));
 	}
 
 }
