@@ -1,43 +1,36 @@
 package linkedlist;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class ArrayListsssss {
 
 	public static void main(String[] args) {
 		
-		ArrayList<Object> aa=new ArrayList<Object>();
+		List<Integer> dmd=new ArrayList<Integer>();
 		
-		aa.add("charlie");
+		dmd.add(212);
+		System.out.println(dmd);
+		System.out.println(dmd.size());
 		
+		dmd.add(777);
+		dmd.add(444);
+		dmd.add(11);
+		dmd.add(23);
 		
-		aa.add(1,"chchc");
+		System.out.println(dmd.size());
 		
-		aa.add(2,7474);
-		
-		aa.add(3,2323);
-		aa.add(23232);
-		aa.add(23232);aa.add(23232);aa.add(23232);aa.add(23232);aa.add(23232);
-		
-		aa.add(10,444444);
-		
-		aa.add(1,444444);
-		aa.add(3,"a");		
-		for (Object aas : aa) {
-			System.out.println("the value is :"+aas);
+		for(int i=0;i<dmd.size();i++) {
+			Object oo=dmd.get(i);
+			System.out.println(oo);
 		}
-		ArrayList<Object> dd=new ArrayList<Object>();
 		
-		dd.add("hu");
+		 int [] xy=new int [2];
+		 
+		 
+		 
+		 System.out.println(xy);
 		
-		ArrayList<Object> cc=new ArrayList<Object>();
-		cc.add(1122);
-		cc.addAll(1,dd);
-		aa.addAll(2,dd);
-		System.out.println(aa);
-			
-		System.out.println(cc.containsAll(dd));
-	
 	}
 	
 	
