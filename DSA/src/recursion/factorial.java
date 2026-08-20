@@ -8,7 +8,9 @@ static int num(int a) {
 		return a * num(a-1);
 }
 	public static void main(String[] args) {
-System.out.println(num(2));
+		
+	int xx=	num(20);
+System.out.println(xx);
 	}
 
 }

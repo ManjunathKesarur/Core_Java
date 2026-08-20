@@ -25,12 +25,19 @@ public class ArrayListsssss {
 			System.out.println(oo);
 		}
 		
-		 int [] xy=new int [2];
-		 
-		 
-		 
-		 System.out.println(xy);
+		System.out.println("------------------");
 		
+		 int [] xy=new int [19];
+		 
+		 xy[0]=9999;
+		 
+		 
+		 for(int aa : xy) {
+		 System.out.println(aa);
+		 }
+		 
+		 
+		 
 	}
 	
 	
