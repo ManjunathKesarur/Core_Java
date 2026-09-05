@@ -2,7 +2,7 @@ package stackkk;
 
 
 class oc{
-static 	void or() {
+ 	void or() {
 	System.out.println("sa");
 }
 }
@@ -22,7 +22,7 @@ public class pr extends oc {
 		
 	System.out.println(	new pr().sum(12));
 	
-	oc.or();
+	new oc().or();
 	
 }
 }
