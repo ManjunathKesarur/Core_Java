@@ -15,6 +15,5 @@ public class prrr {
 	stack.add(33);
 	System.out.println(stack);
 	
-	
 }
 }
