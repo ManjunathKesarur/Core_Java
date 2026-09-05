@@ -1,7 +1,16 @@
 package stackkk;
 
-public class pr {
 
+class oc{
+static 	void or() {
+	System.out.println("sa");
+}
+}
+
+public class pr extends oc {
+
+	static  int x;
+	
 	public  int  sum(int a) {
 	int c=a+a;
 	return c;	
@@ -12,6 +21,8 @@ public class pr {
 	
 		
 	System.out.println(	new pr().sum(12));
+	
+	oc.or();
 	
 }
 }
