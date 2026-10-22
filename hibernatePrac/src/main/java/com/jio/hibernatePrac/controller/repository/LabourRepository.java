@@ -15,15 +15,17 @@ public class LabourRepository {
 	EntityManager entityManager;
 
 	@Transactional
-	public void save(Labour labour) {
+	public String save(Labour labour) {
 		entityManager.persist(labour);
+		return "saved";
 	}
 	
 	public Labour fetch(int id) {
 	return 	entityManager.find(Labour.class,id);
 	}
 
-	public void remove(int id) {
-		entityManager.remove(id);
+	@Transactional
+	public void remove(Labour labour) {
+		entityManager.remove(labour);
 	}
 }

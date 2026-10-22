@@ -1,5 +1,6 @@
 package com.jio.hibernatePrac.controller;
 
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -23,13 +24,15 @@ public class LabourController {
 	}
 	
 	@PostMapping
-	public void save(@RequestBody Labour labour) {
+	public ResponseEntity<String> save(@RequestBody Labour labour) {
 		labourService.save(labour);
+		return ResponseEntity.ok("Saveds");
 	}
 	
 	@GetMapping("/{id}")
-	public Labour fetch(@PathVariable int id) {
-	return 	labourService.fetch(id);
+	public ResponseEntity<Labour> fetch(@PathVariable int id) {
+//	 	labourService.fetch(id);
+	return ResponseEntity.ok(labourService.fetch(id));
 	}
 	
 	@PutMapping("/{id}")
@@ -38,7 +41,7 @@ public class LabourController {
 	}
 	
 	@DeleteMapping("/{id}")
-	public String delete(@RequestBody int id) {
+	public String delete(@PathVariable int id) {
 		return labourService.delete(id);
 	}
 }

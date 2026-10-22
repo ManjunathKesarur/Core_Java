@@ -15,8 +15,8 @@ public class LabourService {
 	}
 	
 	
-	public void save(Labour labour) {
-			labourRepository.save(labour);
+	public String save(Labour labour) {
+		return	labourRepository.save(labour);
 	}
 	
 	public Labour  fetch(int id) {
@@ -35,13 +35,15 @@ public class LabourService {
 			}
 	}
 	
+	
+	
 	public String delete(int id) {
 		Labour labour=	labourRepository.fetch(id);
 		
 		if(labour == null) {
 			return "user not found";
 		}else {
-			labourRepository.remove(id);
+			labourRepository.remove(labour);
 		return "deleted";
 		}
 	

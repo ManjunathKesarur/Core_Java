@@ -1,6 +1,7 @@
 package com.jio.hibernatePrac.controller.model;
 
 import jakarta.annotation.Generated;
+import jakarta.persistence.Embedded;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -13,9 +14,22 @@ public class Labour {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 	
+	
+	
 	private String name;
 	
 	private Integer age;
+	
+	@Embedded
+	private Address address;
+
+	public Address getAddress() {
+		return address;
+	}
+
+	public void setAddress(Address address) {
+		this.address = address;
+	}
 
 	public int getId() {
 		return id;
