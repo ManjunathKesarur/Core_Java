@@ -17,23 +17,30 @@ public static void main(String[] args) {
 //		System.out.println();
 //	}
 	
-	int no=
-			16;
+//	int no=
+//			16;
+//	
+//	int i=0;
+//	int j=1;
+//	
+//	
+//	for(int k=0;k<=no;k++) {
+//		System.out.print(i+" ");
+//		
+//		int c=i+j;
+//		
+//	i=j;
+//	j=c;
+//	
+//	}
 	
-	int i=0;
-	int j=1;
-	
-	
-	for(int k=0;k<=no;k++) {
-		System.out.print(i+" ");
-		
-		int c=i+j;
-		
-	i=j;
-	j=c;
-	
+	int digi=0,temp=12;
+	while(temp>0) {
+		temp=temp/10;
+		digi++;
 	}
-	
+	System.out.println(digi);
+	System.out.println(98%10);
 	
 }
 }
