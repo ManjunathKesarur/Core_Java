@@ -30,7 +30,7 @@ public static void main(String[] args) {
 	
 	if(n > ar.length) {
 		System.out.println("not sufficient numbers");
-		break;
+			return;
 	}else if(i == (n-1)) {
 		System.out.println("\n"+ar[i]);
 		
