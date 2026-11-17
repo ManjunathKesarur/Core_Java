@@ -14,11 +14,15 @@ public class DepartmentResponseDTO {
 	private int id;
 	
 	private String name;
+	
+	private int count;
+	
 	private List<StudentSummary> students;
 	
 	public DepartmentResponseDTO(Department department) {
 		this.id = department.getId();
 		this.name = department.getName();
+		this.count=department.getStudentcount();
 		this.students = new ArrayList<StudentSummary>();
 		
 		if(department.getStudents() != null) {

@@ -27,6 +27,9 @@ public class Department {
 	private String name;
 	
 	
+	private int studentcount;
+	
+	
 	@OneToMany(mappedBy = "dept")
 	
 	private List<Student> students=new ArrayList<Student>();

@@ -25,8 +25,17 @@ public class StudentService {
 	public String createStudent(int id,Student student) {
 			
 		Department department=	departmentRepository.fetchByDeptId(id);
+		
+		if(department == null)
+			return "the entered id is not registerd deptid";
+		
 		student.setDept(department);
 		department.getStudents().add(student);
+		
+		department.setStudentcount(department.getStudentcount()+1);;
+		
+	 departmentRepository.createDepartment(department);
+		
 		return 	studentRepository.create(student);
 		 
 	}
